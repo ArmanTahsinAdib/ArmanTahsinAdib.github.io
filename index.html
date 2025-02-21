@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpeg" href="./face.jpg" />
+    <title>Arman Tahsin Adib</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: #1e1e1e;
+        color: #d0d0d0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        user-select: none;
+      }
+      .container {
+        max-width: 600px;
+        padding: 20px;
+      }
+      h1 {
+        font-size: 3rem;
+        color: #bb86fc;
+      }
+      .links a {
+        color: #03dac6;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 2rem;
+        transition: 0.3s;
+      }
+      .links a:hover {
+        color: #bb86fc;
+      }
+      .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./face.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>Arman Tahsin Adib</h1>
+      <div class="links">
+        <a
+          target="_blank"
+          href="https://github.com/ArmanTahsinAdib/"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100093664650432"
+          aria-label="Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://x.com/ArmanTahsi70717"
+          aria-label="Twitter"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>
