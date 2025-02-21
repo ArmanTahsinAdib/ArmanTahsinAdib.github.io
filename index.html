@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/jpeg" href="./face.jpg" />
+    <link rel="icon" type="image/jpeg" href="./face.png" />
     <title>Arman Tahsin Adib</title>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
@@ -29,7 +29,9 @@
       }
       h1 {
         font-size: 3rem;
-        color: #bb86fc;
+        color: #ff79c6; /* Changed color to a more vibrant one */
+        animation: slideInFromLeft 2s ease-in-out;
+        white-space: pre-line; /* Allow line breaks */
       }
       .links a {
         color: #03dac6;
@@ -56,12 +58,22 @@
           opacity: 1;
         }
       }
+      @keyframes slideInFromLeft {
+        from {
+          transform: translateX(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <img src="./face.jpg" alt="Profile Picture" class="profile-pic" />
-      <h1>Arman Tahsin Adib</h1>
+      <img src="./face.png" alt="Profile Picture" class="profile-pic" />
+      <h1>Hi, I am<br />Arman Tahsin Adib</h1>
       <div class="links">
         <a
           target="_blank"
